@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Apperance.Controller">
+   <children>
+      <ImageView fitHeight="51.0" fitWidth="54.0" layoutX="524.0" layoutY="34.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/Delete.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXButton fx:id="connect" layoutX="70.0" layoutY="255.0" mnemonicParsing="false" onAction="#Connect" prefHeight="51.0" prefWidth="135.0" ripplerFill="WHITE" style="-fx-background-color: #565656;" text="Połącz" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Reflection bottomOpacity="0.11" fraction="1.0" topOpacity="0.11" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXTextField alignment="CENTER" layoutX="70.0" layoutY="120.0" />
+      <JFXTextField alignment="CENTER" layoutX="70.0" layoutY="195.0" text="192.168.1.103">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></JFXTextField>
+      <Label layoutX="70.0" layoutY="99.0" prefHeight="25.0" prefWidth="135.0" text="Nazwa">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="71.0" layoutY="180.0" prefHeight="17.0" prefWidth="135.0" text="Adres">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <ImageView fitHeight="276.0" fitWidth="276.0" layoutX="250.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/Human.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="38.0" layoutY="31.0" prefWidth="200.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+      <Separator layoutX="37.0" layoutY="357.0" prefWidth="200.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+   </children>
+</AnchorPane>

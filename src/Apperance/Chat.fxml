@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Apperance.Chat">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="240.0" style="-fx-background-color: #434343;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Separator layoutX="14.0" layoutY="54.0" prefWidth="200.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="50.0" />
+            <Label layoutX="92.0" layoutY="14.0" text="Online" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Circle fill="#22bc1f" layoutX="86.0" layoutY="22.0" radius="6.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <ImageView fitHeight="36.0" fitWidth="38.0" layoutX="14.0" layoutY="450.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0">
+               <image>
+                  <Image url="@../Assets/ExitWhite.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="logoutbutton" fitHeight="36.0" fitWidth="38.0" layoutX="50.0" layoutY="450.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="50.0">
+               <image>
+                  <Image url="@../Assets/Logout.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Separator layoutX="20.0" layoutY="439.0" prefWidth="200.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+            <JFXListView fx:id="listview" layoutX="20.0" layoutY="60.0" prefHeight="368.0" prefWidth="200.0" style="-fx-background-color: #434343;" AnchorPane.bottomAnchor="72.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="60.0" />
+            <Button fx:id="coon" layoutX="161.0" layoutY="456.0" mnemonicParsing="false" onAction="#coon" text="Button" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="240.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="txfield" layoutX="14.0" layoutY="455.0" prefHeight="25.0" prefWidth="489.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="50.0" />
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="490.0" layoutY="449.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+               <image>
+                  <Image url="@../Assets/SendM.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <JFXTextArea fx:id="conversation" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="437.0" prefWidth="550.0" wrapText="true" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></JFXTextArea>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
